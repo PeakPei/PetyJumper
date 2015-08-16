@@ -16,7 +16,6 @@
 		FAE66E5B1B80CF7F007F4563 /* Colors.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE66E4F1B80CF7F007F4563 /* Colors.m */; };
 		FAE66E5C1B80CF7F007F4563 /* GameResult.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE66E521B80CF7F007F4563 /* GameResult.m */; };
 		FAE66E5D1B80CF7F007F4563 /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE66E541B80CF7F007F4563 /* GameScene.m */; };
-		FAE66E5E1B80CF7F007F4563 /* ShareScene.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE66E561B80CF7F007F4563 /* ShareScene.m */; };
 		FAE66E5F1B80CF7F007F4563 /* Spawner.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE66E581B80CF7F007F4563 /* Spawner.m */; };
 		FAE66E601B80CF7F007F4563 /* TutorialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE66E5A1B80CF7F007F4563 /* TutorialViewController.m */; };
 		FAE66E671B80D0C5007F4563 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAE66E651B80D0C5007F4563 /* Main.storyboard */; };
@@ -53,8 +52,6 @@
 		FAE66E521B80CF7F007F4563 /* GameResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameResult.m; sourceTree = "<group>"; };
 		FAE66E531B80CF7F007F4563 /* GameScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameScene.h; sourceTree = "<group>"; };
 		FAE66E541B80CF7F007F4563 /* GameScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameScene.m; sourceTree = "<group>"; };
-		FAE66E551B80CF7F007F4563 /* ShareScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShareScene.h; sourceTree = "<group>"; };
-		FAE66E561B80CF7F007F4563 /* ShareScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShareScene.m; sourceTree = "<group>"; };
 		FAE66E571B80CF7F007F4563 /* Spawner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Spawner.h; sourceTree = "<group>"; };
 		FAE66E581B80CF7F007F4563 /* Spawner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Spawner.m; sourceTree = "<group>"; };
 		FAE66E591B80CF7F007F4563 /* TutorialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TutorialViewController.h; sourceTree = "<group>"; };
@@ -172,8 +169,6 @@
 			children = (
 				FAE66E531B80CF7F007F4563 /* GameScene.h */,
 				FAE66E541B80CF7F007F4563 /* GameScene.m */,
-				FAE66E551B80CF7F007F4563 /* ShareScene.h */,
-				FAE66E561B80CF7F007F4563 /* ShareScene.m */,
 			);
 			name = Scenes;
 			sourceTree = "<group>";
@@ -283,7 +278,6 @@
 				FAE66E5B1B80CF7F007F4563 /* Colors.m in Sources */,
 				FAE66E601B80CF7F007F4563 /* TutorialViewController.m in Sources */,
 				FAE66E291B80CE6C007F4563 /* AppDelegate.m in Sources */,
-				FAE66E5E1B80CF7F007F4563 /* ShareScene.m in Sources */,
 				FAE66E5F1B80CF7F007F4563 /* Spawner.m in Sources */,
 				FAE66E5C1B80CF7F007F4563 /* GameResult.m in Sources */,
 				FAE66E5D1B80CF7F007F4563 /* GameScene.m in Sources */,
@@ -482,6 +476,7 @@
 				FAE66E4A1B80CE6C007F4563 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FAE66E4B1B80CE6C007F4563 /* Build configuration list for PBXNativeTarget "Pety JumperTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +485,7 @@
 				FAE66E4D1B80CE6C007F4563 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

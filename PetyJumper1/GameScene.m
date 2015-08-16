@@ -13,7 +13,7 @@
 #import "GameResult.h"
 #import "GameViewController.h"
 #import "ShareScene.h"
-#import <QuartzCore/QuartzCore.h>
+
 
 
 
@@ -26,6 +26,8 @@
 @property(nonatomic, strong) NSMutableArray *arrayOfColumns;
 @property(nonatomic) BOOL peterFalls;
 @property(nonatomic) CGFloat peterAngle;
+@property (strong, nonatomic) UIDocumentInteractionController *docController;
+
 
 
 
@@ -55,31 +57,7 @@
 
     
 }
-/*
--(void) drawTutorialScene{
 
-
-    SKShapeNode *backGroungNode=[[SKShapeNode alloc] init];
-    UIBezierPath *square=[UIBezierPath bezierPathWithRect:CGRectMake(-self.size.width/2, -self.size.height/2, self.size.width, self.size.height)];
-    backGroungNode.path=[square CGPath];
-    backGroungNode.fillColor=[Colors waterColor];
-    backGroungNode.strokeColor=[Colors waterColor];
-    backGroungNode.zPosition=TUTORIAL_SCENE_Z_POSITION;
-    backGroungNode.name=@"TUTORIAL";
-    [self addChild:backGroungNode];
-    
-    SKSpriteNode *tut2=[SKSpriteNode spriteNodeWithImageNamed:@"tut2"];
-    tut2.position=CGPointMake(4, -3.5);
-    CGSize newSize = CGSizeMake(160.0, 160.0*tut2.size.height/tut2.size.width);
-    tut2.size = newSize;
-    [backGroungNode addChild:tut2];
-    SKAction *bigger=[SKAction scaleBy:1.1 duration:DISAPEAR_DURATION/2];
-    SKAction *smaller=[SKAction scaleBy:1/1.1 duration:DISAPEAR_DURATION/2];
-    SKAction *cycle=[SKAction repeatActionForever:[SKAction sequence:@[bigger,smaller]]];
-    [tut2 runAction:cycle];
-
-    
-}*/
 
 -(void)newGame{
     if (!self.water) {
@@ -148,12 +126,7 @@
         if([node.name isEqualToString:@"SCORE"]){
             [node runAction:[SKAction moveByX:0.0 y:-100 duration:DISAPEAR_DURATION]];
         }
-        if([node.name isEqualToString:@"RAINBOW"]){
-            [node runAction:[SKAction fadeAlphaTo:0 duration:DISAPEAR_DURATION]];
-        }
-        if([node.name isEqualToString:@"PAUSE"]){
-            [node runAction:[SKAction fadeAlphaTo:0 duration:DISAPEAR_DURATION/3]];
-        }
+
     }
     [self drawLastScene];
     
@@ -197,10 +170,10 @@
     [newGameTitle runAction:[SKAction fadeAlphaTo:1.0 duration:DISAPEAR_DURATION]];
     [self   addChild:newGameTitle];
     
-    SKSpriteNode *share=[SKSpriteNode spriteNodeWithImageNamed:@"share"];
-    share.position=CGPointMake(5, -120);
+    SKSpriteNode *share=[SKSpriteNode spriteNodeWithImageNamed:@"instagram"];
+    share.position=CGPointMake(0, -120);
     share.alpha=0;
-    [share setScale:0.32];
+    share.size = CGSizeMake(80.0, 80.0);
     share.name=@"SHARE";
     [share runAction:[SKAction fadeAlphaTo:1.0 duration:DISAPEAR_DURATION]];
     
@@ -339,33 +312,34 @@
     }
     
     if ([node.name isEqualToString:@"SHARE"]) {
+        [self shareInstagram];
 
-        for (SKNode *node in self.children){
-            CGFloat shift = 0.0;
-            if ([node.name isEqualToString:@"WATER"] ||[node.name isEqualToString:@"WAVE1"] ||[node.name isEqualToString:@"WAVE2"]||[node.name isEqualToString:@"SHARE"]) {
-                shift = -500.0;
-            }   else {
-                shift = 600.0 - node.position.y;
-            }
-            if ([node.name isEqualToString:@"NEW_GAME"]) {
-                shift = -170.0;
-            }
-            SKAction *goAway = [SKAction moveByX:0.0 y:shift duration:DISAPEAR_DURATION/1.5];
-            if ([node.name isEqualToString:@"NEW_GAME"]) {
-                [node runAction:goAway];
-            } else{
-                SKAction *sequence = [SKAction sequence:@[goAway, [SKAction removeFromParent]]];
-                [node runAction:sequence completion:^{
-                    if (self.children.count == 1) {
-                        //Present new Scene;
-                        ShareScene *scene = [[ShareScene alloc] initWithSize:self.size];
-                        scene.scaleMode = SKSceneScaleModeAspectFill;
-                        scene.score = self.score;
-                        [self.view presentScene:scene];
-                    }
-                }];
-            }
-        }
+//        for (SKNode *node in self.children){
+//            CGFloat shift = 0.0;
+//            if ([node.name isEqualToString:@"WATER"] ||[node.name isEqualToString:@"WAVE1"] ||[node.name isEqualToString:@"WAVE2"]||[node.name isEqualToString:@"SHARE"]) {
+//                shift = -500.0;
+//            }   else {
+//                shift = 600.0 - node.position.y;
+//            }
+//            if ([node.name isEqualToString:@"NEW_GAME"]) {
+//                shift = -170.0;
+//            }
+//            SKAction *goAway = [SKAction moveByX:0.0 y:shift duration:DISAPEAR_DURATION/1.5];
+//            if ([node.name isEqualToString:@"NEW_GAME"]) {
+//                [node runAction:goAway];
+//            } else{
+//                SKAction *sequence = [SKAction sequence:@[goAway, [SKAction removeFromParent]]];
+//                [node runAction:sequence completion:^{
+//                    if (self.children.count == 1) {
+//                        //Present new Scene;
+//                        ShareScene *scene = [[ShareScene alloc] initWithSize:self.size];
+//                        scene.scaleMode = SKSceneScaleModeAspectFill;
+//                        scene.score = self.score;
+//                        [self.view presentScene:scene];
+//                    }
+//                }];
+//            }
+//        }
     }
 
     
@@ -386,6 +360,64 @@
     
     
 }
+
+-(UIImage *)makeImageToShare{
+    UIImage *image = [UIImage imageNamed:@"ResultImage"];
+    CGPoint point = CGPointMake(320, 160);
+    NSString *text = [NSString stringWithFormat:@"%ld", self.score];
+    
+    UIImage *newImage = [self drawFront:image text:text atPoint:point];
+    return newImage;
+}
+
+-(void)shareInstagram{
+    NSString *imagePath = [NSHomeDirectory() stringByAppendingPathComponent:@"Documents/Test.igo"];
+    [[NSFileManager defaultManager] removeItemAtPath:imagePath error:nil];
+    
+    //choose sharing image
+    UIImage *image = [self makeImageToShare];
+    //
+    
+    [UIImagePNGRepresentation(image) writeToFile:imagePath atomically:YES];
+    
+    
+    self.docController = [UIDocumentInteractionController interactionControllerWithURL:[NSURL fileURLWithPath:imagePath]];
+    self.docController.delegate = self;
+    self.docController.UTI = @"com.instagram.exclusivegram";
+    [self.docController presentOpenInMenuFromRect:self.view.frame inView:self.view animated:YES];
+    
+}
+
+
+
+
+-(UIImage*)drawFront:(UIImage*)image text:(NSString*)text atPoint:(CGPoint)point
+{
+    UIFont *font = [UIFont fontWithName:@"Menlo-Bold" size:120];
+    UIGraphicsBeginImageContext(image.size);
+    [image drawInRect:CGRectMake(0,0,image.size.width,image.size.height)];
+    CGRect rect = CGRectMake(point.x, (point.y - 5), image.size.width, image.size.height);
+    [[UIColor whiteColor] set];
+    
+    NSMutableAttributedString* attString = [[NSMutableAttributedString alloc] initWithString:text];
+    NSRange range = NSMakeRange(0, [attString length]);
+    
+    [attString addAttribute:NSFontAttributeName value:font range:range];
+    [attString addAttribute:NSForegroundColorAttributeName value:[UIColor whiteColor] range:range];
+    
+    NSShadow* shadow = [[NSShadow alloc] init];
+    shadow.shadowColor = [UIColor darkGrayColor];
+    shadow.shadowOffset = CGSizeMake(1.0f, 1.5f);
+    //    [attString addAttribute:NSShadowAttributeName value:shadow range:range];
+    
+    [attString drawInRect:CGRectIntegral(rect)];
+    UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    return newImage;
+}
+
+
 
 -(void)rotatePeter{
     if(self.peterFalls && self.peterAngle>0){
