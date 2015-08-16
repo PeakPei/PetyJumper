@@ -1,0 +1,441 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FAE66E261B80CE6C007F4563 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE66E251B80CE6C007F4563 /* main.m */; };
+		FAE66E291B80CE6C007F4563 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE66E281B80CE6C007F4563 /* AppDelegate.m */; };
+		FAE66E2C1B80CE6C007F4563 /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE66E2B1B80CE6C007F4563 /* GameScene.m */; };
+		FAE66E2E1B80CE6C007F4563 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = FAE66E2D1B80CE6C007F4563 /* GameScene.sks */; };
+		FAE66E311B80CE6C007F4563 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE66E301B80CE6C007F4563 /* GameViewController.m */; };
+		FAE66E341B80CE6C007F4563 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAE66E321B80CE6C007F4563 /* Main.storyboard */; };
+		FAE66E361B80CE6C007F4563 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAE66E351B80CE6C007F4563 /* Images.xcassets */; };
+		FAE66E391B80CE6C007F4563 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAE66E371B80CE6C007F4563 /* LaunchScreen.xib */; };
+		FAE66E451B80CE6C007F4563 /* PetyJumper1Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE66E441B80CE6C007F4563 /* PetyJumper1Tests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FAE66E3F1B80CE6C007F4563 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAE66E181B80CE6C007F4563 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAE66E1F1B80CE6C007F4563;
+			remoteInfo = PetyJumper1;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FAE66E201B80CE6C007F4563 /* PetyJumper1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PetyJumper1.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAE66E241B80CE6C007F4563 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAE66E251B80CE6C007F4563 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FAE66E271B80CE6C007F4563 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FAE66E281B80CE6C007F4563 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FAE66E2A1B80CE6C007F4563 /* GameScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameScene.h; sourceTree = "<group>"; };
+		FAE66E2B1B80CE6C007F4563 /* GameScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameScene.m; sourceTree = "<group>"; };
+		FAE66E2D1B80CE6C007F4563 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		FAE66E2F1B80CE6C007F4563 /* GameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
+		FAE66E301B80CE6C007F4563 /* GameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
+		FAE66E331B80CE6C007F4563 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FAE66E351B80CE6C007F4563 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FAE66E381B80CE6C007F4563 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		FAE66E3E1B80CE6C007F4563 /* PetyJumper1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PetyJumper1Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAE66E431B80CE6C007F4563 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAE66E441B80CE6C007F4563 /* PetyJumper1Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PetyJumper1Tests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FAE66E1D1B80CE6C007F4563 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAE66E3B1B80CE6C007F4563 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FAE66E171B80CE6C007F4563 = {
+			isa = PBXGroup;
+			children = (
+				FAE66E221B80CE6C007F4563 /* PetyJumper1 */,
+				FAE66E411B80CE6C007F4563 /* PetyJumper1Tests */,
+				FAE66E211B80CE6C007F4563 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FAE66E211B80CE6C007F4563 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FAE66E201B80CE6C007F4563 /* PetyJumper1.app */,
+				FAE66E3E1B80CE6C007F4563 /* PetyJumper1Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FAE66E221B80CE6C007F4563 /* PetyJumper1 */ = {
+			isa = PBXGroup;
+			children = (
+				FAE66E271B80CE6C007F4563 /* AppDelegate.h */,
+				FAE66E281B80CE6C007F4563 /* AppDelegate.m */,
+				FAE66E2A1B80CE6C007F4563 /* GameScene.h */,
+				FAE66E2B1B80CE6C007F4563 /* GameScene.m */,
+				FAE66E2D1B80CE6C007F4563 /* GameScene.sks */,
+				FAE66E2F1B80CE6C007F4563 /* GameViewController.h */,
+				FAE66E301B80CE6C007F4563 /* GameViewController.m */,
+				FAE66E321B80CE6C007F4563 /* Main.storyboard */,
+				FAE66E351B80CE6C007F4563 /* Images.xcassets */,
+				FAE66E371B80CE6C007F4563 /* LaunchScreen.xib */,
+				FAE66E231B80CE6C007F4563 /* Supporting Files */,
+			);
+			path = PetyJumper1;
+			sourceTree = "<group>";
+		};
+		FAE66E231B80CE6C007F4563 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FAE66E241B80CE6C007F4563 /* Info.plist */,
+				FAE66E251B80CE6C007F4563 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FAE66E411B80CE6C007F4563 /* PetyJumper1Tests */ = {
+			isa = PBXGroup;
+			children = (
+				FAE66E441B80CE6C007F4563 /* PetyJumper1Tests.m */,
+				FAE66E421B80CE6C007F4563 /* Supporting Files */,
+			);
+			path = PetyJumper1Tests;
+			sourceTree = "<group>";
+		};
+		FAE66E421B80CE6C007F4563 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FAE66E431B80CE6C007F4563 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FAE66E1F1B80CE6C007F4563 /* PetyJumper1 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAE66E481B80CE6C007F4563 /* Build configuration list for PBXNativeTarget "PetyJumper1" */;
+			buildPhases = (
+				FAE66E1C1B80CE6C007F4563 /* Sources */,
+				FAE66E1D1B80CE6C007F4563 /* Frameworks */,
+				FAE66E1E1B80CE6C007F4563 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PetyJumper1;
+			productName = PetyJumper1;
+			productReference = FAE66E201B80CE6C007F4563 /* PetyJumper1.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FAE66E3D1B80CE6C007F4563 /* PetyJumper1Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAE66E4B1B80CE6C007F4563 /* Build configuration list for PBXNativeTarget "PetyJumper1Tests" */;
+			buildPhases = (
+				FAE66E3A1B80CE6C007F4563 /* Sources */,
+				FAE66E3B1B80CE6C007F4563 /* Frameworks */,
+				FAE66E3C1B80CE6C007F4563 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FAE66E401B80CE6C007F4563 /* PBXTargetDependency */,
+			);
+			name = PetyJumper1Tests;
+			productName = PetyJumper1Tests;
+			productReference = FAE66E3E1B80CE6C007F4563 /* PetyJumper1Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FAE66E181B80CE6C007F4563 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "Ivan Sosnovik";
+				TargetAttributes = {
+					FAE66E1F1B80CE6C007F4563 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					FAE66E3D1B80CE6C007F4563 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = FAE66E1F1B80CE6C007F4563;
+					};
+				};
+			};
+			buildConfigurationList = FAE66E1B1B80CE6C007F4563 /* Build configuration list for PBXProject "PetyJumper1" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FAE66E171B80CE6C007F4563;
+			productRefGroup = FAE66E211B80CE6C007F4563 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FAE66E1F1B80CE6C007F4563 /* PetyJumper1 */,
+				FAE66E3D1B80CE6C007F4563 /* PetyJumper1Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FAE66E1E1B80CE6C007F4563 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAE66E391B80CE6C007F4563 /* LaunchScreen.xib in Resources */,
+				FAE66E361B80CE6C007F4563 /* Images.xcassets in Resources */,
+				FAE66E2E1B80CE6C007F4563 /* GameScene.sks in Resources */,
+				FAE66E341B80CE6C007F4563 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAE66E3C1B80CE6C007F4563 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FAE66E1C1B80CE6C007F4563 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAE66E311B80CE6C007F4563 /* GameViewController.m in Sources */,
+				FAE66E291B80CE6C007F4563 /* AppDelegate.m in Sources */,
+				FAE66E2C1B80CE6C007F4563 /* GameScene.m in Sources */,
+				FAE66E261B80CE6C007F4563 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAE66E3A1B80CE6C007F4563 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAE66E451B80CE6C007F4563 /* PetyJumper1Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FAE66E401B80CE6C007F4563 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAE66E1F1B80CE6C007F4563 /* PetyJumper1 */;
+			targetProxy = FAE66E3F1B80CE6C007F4563 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FAE66E321B80CE6C007F4563 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAE66E331B80CE6C007F4563 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FAE66E371B80CE6C007F4563 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAE66E381B80CE6C007F4563 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FAE66E461B80CE6C007F4563 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FAE66E471B80CE6C007F4563 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FAE66E491B80CE6C007F4563 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PetyJumper1/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FAE66E4A1B80CE6C007F4563 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PetyJumper1/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		FAE66E4C1B80CE6C007F4563 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PetyJumper1Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PetyJumper1.app/PetyJumper1";
+			};
+			name = Debug;
+		};
+		FAE66E4D1B80CE6C007F4563 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PetyJumper1Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PetyJumper1.app/PetyJumper1";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FAE66E1B1B80CE6C007F4563 /* Build configuration list for PBXProject "PetyJumper1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAE66E461B80CE6C007F4563 /* Debug */,
+				FAE66E471B80CE6C007F4563 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAE66E481B80CE6C007F4563 /* Build configuration list for PBXNativeTarget "PetyJumper1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAE66E491B80CE6C007F4563 /* Debug */,
+				FAE66E4A1B80CE6C007F4563 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FAE66E4B1B80CE6C007F4563 /* Build configuration list for PBXNativeTarget "PetyJumper1Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAE66E4C1B80CE6C007F4563 /* Debug */,
+				FAE66E4D1B80CE6C007F4563 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FAE66E181B80CE6C007F4563 /* Project object */;
+}
