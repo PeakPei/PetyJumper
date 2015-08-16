@@ -10,7 +10,7 @@
 #define PetyJumper_Constants_h
 
 #define WATER_POSITION 200
-#define HOLE_HEIGHT 140.0
+#define HOLE_HEIGHT 138.0
 #define TIME_INTERVAL 2.5
 #define G_FACTOR 4.0
 #define VELOCITY_TO_ADD 200

@@ -16,6 +16,13 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"PT" ofType:@"wav"];
+    player = [[AVAudioPlayer alloc] initWithContentsOfURL:[NSURL fileURLWithPath:path] error:NULL];
+    player.delegate = self;
+    player.numberOfLoops = -1;
+    [player play];
+
+    
     // Override point for customization after application launch.
     return YES;
 }

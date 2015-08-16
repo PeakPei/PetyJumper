@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA094BA31B810469003386E2 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA094BA21B810469003386E2 /* AVFoundation.framework */; };
+		FACEC6B91B810DD8006A6758 /* PT.wav in Resources */ = {isa = PBXBuildFile; fileRef = FACEC6B81B810DD8006A6758 /* PT.wav */; };
 		FAE66E261B80CE6C007F4563 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE66E251B80CE6C007F4563 /* main.m */; };
 		FAE66E291B80CE6C007F4563 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE66E281B80CE6C007F4563 /* AppDelegate.m */; };
 		FAE66E2E1B80CE6C007F4563 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = FAE66E2D1B80CE6C007F4563 /* GameScene.sks */; };
@@ -33,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FA094BA21B810469003386E2 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		FACEC6B81B810DD8006A6758 /* PT.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = PT.wav; path = ../PT.wav; sourceTree = "<group>"; };
 		FAE66E201B80CE6C007F4563 /* Pety Jumper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pety Jumper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAE66E241B80CE6C007F4563 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FAE66E251B80CE6C007F4563 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -65,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA094BA31B810469003386E2 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +86,7 @@
 		FAE66E171B80CE6C007F4563 = {
 			isa = PBXGroup;
 			children = (
+				FA094BA21B810469003386E2 /* AVFoundation.framework */,
 				FAE66E221B80CE6C007F4563 /* PetyJumper1 */,
 				FAE66E411B80CE6C007F4563 /* PetyJumper1Tests */,
 				FAE66E211B80CE6C007F4563 /* Products */,
@@ -106,6 +112,7 @@
 				FAE66E271B80CE6C007F4563 /* AppDelegate.h */,
 				FAE66E281B80CE6C007F4563 /* AppDelegate.m */,
 				FAE66E2D1B80CE6C007F4563 /* GameScene.sks */,
+				FACEC6B81B810DD8006A6758 /* PT.wav */,
 				FAE66E351B80CE6C007F4563 /* Images.xcassets */,
 				FAE66E681B80D1BB007F4563 /* LaunchScreen.xib */,
 				FAE66E651B80D0C5007F4563 /* Main.storyboard */,
@@ -253,6 +260,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FACEC6B91B810DD8006A6758 /* PT.wav in Resources */,
 				FAE66E6A1B80D1BB007F4563 /* LaunchScreen.xib in Resources */,
 				FAE66E361B80CE6C007F4563 /* Images.xcassets in Resources */,
 				FAE66E2E1B80CE6C007F4563 /* GameScene.sks in Resources */,

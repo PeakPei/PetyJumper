@@ -49,7 +49,7 @@
 
     [NSTimer scheduledTimerWithTimeInterval:TIME_INTERVAL target:self selector:@selector(addColumn:) userInfo:nil repeats:YES];
     [self newGame];
-//    SKAction *music=[SKAction playSoundFileNamed:@"P.mp3" waitForCompletion:YES];
+//    SKAction *music=[SKAction playSoundFileNamed:@"PT.wav" waitForCompletion:YES];
 //    SKAction *cycleMusic=[SKAction repeatActionForever:music];
 //    [self runAction:cycleMusic];
     

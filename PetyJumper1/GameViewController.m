@@ -52,6 +52,7 @@
         skView.ignoresSiblingOrder = YES;
         //Google ad
 //        self.banner.adUnitID = @"ca-app-pub-3940256099942544/2934735716";
+//        self.banner.adUnitID = @"ca-app-pub-3632703288580078/4697394743";
 //        self.banner.rootViewController = self;
 //        [self.banner loadRequest:[GADRequest request]];
         
