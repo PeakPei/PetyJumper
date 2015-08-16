@@ -1,13 +1,14 @@
 //
 //  GameViewController.m
-//  PetyJumper1
+//  PetyJumper
 //
-//  Created by Sosnovik on 16.08.15.
+//  Created by Sosnovik on 02.03.15.
 //  Copyright (c) 2015 Ivan Sosnovik. All rights reserved.
 //
 
 #import "GameViewController.h"
 #import "GameScene.h"
+#import "Colors.h"
 
 @implementation SKScene (Unarchive)
 
@@ -33,21 +34,48 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
-    // Configure the view.
-    SKView * skView = (SKView *)self.view;
-    skView.showsFPS = YES;
-    skView.showsNodeCount = YES;
-    /* Sprite Kit applies additional optimizations to improve rendering performance */
-    skView.ignoresSiblingOrder = YES;
-    
-    // Create and configure the scene.
-    GameScene *scene = [GameScene unarchiveFromFile:@"GameScene"];
-    scene.scaleMode = SKSceneScaleModeAspectFill;
-    
-    // Present the scene.
-    [skView presentScene:scene];
+    self.passedTutorial = NO;
+    self.view.window.backgroundColor = [Colors waterColor];
+    //   self.view.backgroundColor = [Colors waterColor];
 }
+
+
+
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    if (self.passedTutorial) {
+        // Configure the view.
+        SKView * skView = (SKView *)self.view;
+        skView.showsFPS = YES;
+        skView.showsNodeCount = YES;
+        /* Sprite Kit applies additional optimizations to improve rendering performance */
+        skView.ignoresSiblingOrder = YES;
+        //Google ad
+//        self.banner.adUnitID = @"ca-app-pub-3940256099942544/2934735716";
+//        self.banner.rootViewController = self;
+//        [self.banner loadRequest:[GADRequest request]];
+        
+        
+        // Create and configure the scene.
+        GameScene *scene = [GameScene unarchiveFromFile:@"GameScene"];
+        scene.scaleMode = SKSceneScaleModeAspectFill;
+        
+        
+        // Present the scene.
+        [skView presentScene:scene];
+    };
+    
+}
+
+-(void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    if (!self.passedTutorial) {
+        self.passedTutorial = YES;
+        [self performSegueWithIdentifier:@"showTutorial" sender:self];
+    }
+    
+}
+
 
 - (BOOL)shouldAutorotate
 {
@@ -59,7 +87,7 @@
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
         return UIInterfaceOrientationMaskAllButUpsideDown;
     } else {
-        return UIInterfaceOrientationMaskAll;
+        return UIInterfaceOrientationMaskPortrait;
     }
 }
 
@@ -72,5 +100,9 @@
 - (BOOL)prefersStatusBarHidden {
     return YES;
 }
+
+
+
+
 
 @end
